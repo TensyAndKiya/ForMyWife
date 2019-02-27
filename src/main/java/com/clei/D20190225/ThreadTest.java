@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.util.concurrent.*;
 
 public class ThreadTest {
+    //哈哈哈
     public static void main(String[] args) {
         MyThread1 thread1=new MyThread1("Thread1");
         thread1.start();
