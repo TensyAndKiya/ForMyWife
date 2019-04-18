@@ -9,10 +9,17 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+        <!--cglib动态代理-->
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>3.2.10</version>
+        </dependency>
+        <!--javaMail-->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.7</version>
         </dependency>
     </dependencies>
 
