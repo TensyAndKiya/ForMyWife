@@ -39,4 +39,11 @@ mysql -u root -p
 
 set password for root@localhost=password('yourpassword');
 
+mysql8 使用 alter user 'root'@'localhost' identified with mysql_native_password by 'myPassword' 来修改密码
+
+最后来个 create user 'kiya'@'%' identified by 'myPassword' 让任何主机可以登录
+若是mysql8 的话 就用 identified with mysql_native_password by
+
+flush privileges;
+
 最简单的安装步骤如上所示
