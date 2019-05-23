@@ -40,9 +40,14 @@ mysql -u root -p
 set password for root@localhost=password('yourpassword');
 
 mysql8 使用 alter user 'root'@'localhost' identified with mysql_native_password by 'myPassword' 来修改密码
+因为mysql8 默认使用的是caching_sha2_password验证方式,之前的则是使用mysql_native_password
+若是采用mysql8的话。。登录可能会出问题哦。。超大概率的。
 
-最后来个 create user 'kiya'@'%' identified by 'myPassword' 让任何主机可以登录
+最后来个 create user 'kiya'@'%' identified by 'myPassword' 让任何主机可以用kiya登录
 若是mysql8 的话 就用 identified with mysql_native_password by
+
+给予所有权限，让用这个的小伙子能像root一样为所欲为，慎用哦！！！
+GRANT ALL PRIVILEGES ON *.* TO 'kiya'@'%' IDENTIFIED BY '123456';
 
 flush privileges;
 
