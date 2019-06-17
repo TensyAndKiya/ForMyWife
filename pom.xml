@@ -21,6 +21,13 @@
             <artifactId>mail</artifactId>
             <version>1.4.7</version>
         </dependency>
+        <!--CleiUtils-->
+        <dependency>
+            <groupId>com.clei</groupId>
+            <artifactId>CleiUtils</artifactId>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/main/resources/lib/CleiUtils-0.01.jar</systemPath>
+        </dependency>
     </dependencies>
 
 
